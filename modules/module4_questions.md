@@ -388,13 +388,13 @@
 ---
 
 ### 35. What is the purpose of entitlements in SAP BTP?
-- **A)** To assign user roles
-- **B)** To define the rights to provision and consume specific SAP BTP services
-- **C)** To store application logs
-- **D)** To create new global accounts
+- **A)** To create new global accounts
+- **B)** To assign user roles
+- **C)** To define the rights to provision and consume specific SAP BTP services
+- **D)** To store application logs
 
 **Answer:**  
-> **B) To define the rights to provision and consume specific SAP BTP services**
+> **C) To define the rights to provision and consume specific SAP BTP services**
 
 ---
 
@@ -405,15 +405,15 @@
 - **D)** The number of buildpacks available
 
 **Answer:**  
-> **B) The numeric limit on the consumption of a service plan within a global account or subaccount**
+> **C) The numeric limit on the consumption of a service plan within a global account or subaccount**
 
 ---
 
 ### 37. How are entitlements and quotas managed in SAP BTP?
-- **A)** Only at the subaccount level
-- **B)** Only at the space level
+- **A)** By the SAP support team only
+- **B)** Only at the subaccount level
 - **C)** At the global account level, then distributed to subaccounts
-- **D)** By the SAP support team only
+- **D)** Only at the space level
 
 **Answer:**  
 > **C) At the global account level, then distributed to subaccounts**
@@ -422,21 +422,21 @@
 ---
 
 ### 39. What is the main purpose of the Cloud Foundry Command Line Interface (CF CLI)?
-- **A)** To manage SAP HANA databases
-- **B)** To deploy and manage applications, services, and resources in the Cloud Foundry runtime
-- **C)** To create user accounts
-- **D)** To configure SAP Fiori launchpad
+- **A)** To configure SAP Fiori launchpad
+- **B)** To create user accounts
+- **C)** To manage SAP HANA databases
+- **D)** To deploy and manage applications, services, and resources in the Cloud Foundry runtime
 
 **Answer:**  
-> **B) To deploy and manage applications, services, and resources in the Cloud Foundry runtime**
+> **D) To deploy and manage applications, services, and resources in the Cloud Foundry runtime**
 
 ---
 
 ### 40. What does the `cf api <your-api-endpoint>` command do?
-- **A)** Logs you into the Cloud Foundry CLI
+- **A)** Deploys an application
 - **B)** Sets the API endpoint for the CF CLI to connect to the correct Cloud Foundry environment
-- **C)** Deploys an application
-- **D)** Lists all available buildpacks
+- **C)** Lists all available buildpacks
+- **D)** Logs you into the Cloud Foundry CLI
 
 **Answer:**  
 > **B) Sets the API endpoint for the CF CLI to connect to the correct Cloud Foundry environment**
@@ -444,58 +444,58 @@
 ---
 
 ### 41. How can you log in to the CF CLI using single sign-on (SSO)?
-- **A)** cf login -sso
-- **B)** cf login --token
-- **C)** cf login -api
-- **D)** cf login -user
+- **A)** cf login -user
+- **B)** cf login -api
+- **C)** cf login -sso
+- **D)** cf login --token
 
 **Answer:**  
-> **A) cf login -sso**
+> **C) cf login -sso**
 
 ---
 
 ### 42. What is a benefit of using CF CLI plugins?
-- **A)** They allow you to extend the functionality of the CF CLI with additional commands, such as managing multitarget applications (MTAs)
-- **B)** They are required for basic login
-- **C)** They replace the need for the SAP BTP cockpit
-- **D)** They are only used for database management
+- **A)** They are only used for database management
+- **B)** They allow you to extend the functionality of the CF CLI with additional commands, such as managing multitarget applications (MTAs)
+- **C)** They are required for basic login
+- **D)** They replace the need for the SAP BTP cockpit
 
 **Answer:**  
-> **A) They allow you to extend the functionality of the CF CLI with additional commands, such as managing multitarget applications (MTAs)**
+> **B) They allow you to extend the functionality of the CF CLI with additional commands, such as managing multitarget applications (MTAs)**
 
 ---
 
 ### 43. What is the main purpose of the Open Service Broker API in Cloud Foundry?
-- **A)** To manage user accounts
-- **B)** To provide a standardized way for platforms to provision, manage, and bind services to applications
-- **C)** To deploy applications
-- **D)** To configure buildpacks
+- **A)** To provide a standardized way for platforms to provision, manage, and bind services to applications
+- **B)** To manage user accounts
+- **C)** To configure buildpacks
+- **D)** To deploy applications
 
 **Answer:**  
-> **B) To provide a standardized way for platforms to provision, manage, and bind services to applications**
+> **A) To provide a standardized way for platforms to provision, manage, and bind services to applications**
 
 ---
 
 ### 44. Which of the following actions can be performed using the Open Service Broker API? (Choose 2)
-- **A)** Provisioning new service instances
-- **B)** Binding a service instance to an application
-- **C)** Compiling application code
-- **D)** Creating user accounts
+- **A)** Compiling application code
+- **B)** Provisioning new service instances
+- **C)** Creating user accounts
+- **D)** Binding a service instance to an application
 
 **Answer:**  
-> **A) Provisioning new service instances**  
-> **B) Binding a service instance to an application**
+> **B) Provisioning new service instances**  
+> **D) Binding a service instance to an application**
 
 ---
 
 ### 45. How does the Open Service Broker API benefit developers using SAP BTP, Cloud Foundry Runtime?
-- **A)** It allows developers to manually configure all service connections
-- **B)** It enables automated, consistent, and self-service provisioning and binding of services to applications
-- **C)** It restricts the use of third-party services
-- **D)** It is only used for internal SAP services
+- **A)** It enables automated, consistent, and self-service provisioning and binding of services to applications
+- **B)** It restricts the use of third-party services
+- **C)** It is only used for internal SAP services
+- **D)** It allows developers to manually configure all service connections
 
 **Answer:**  
-> **B) It enables automated, consistent, and self-service provisioning and binding of services to applications**
+> **A) It enables automated, consistent, and self-service provisioning and binding of services to applications**
 
 
 ---
@@ -534,43 +534,43 @@
 ---
 
 ### 50. Which of the following is a key responsibility of the developer when deploying a Docker image to SAP BTP, Cloud Foundry Runtime, compared to using a buildpack?
-- **A)** Selecting the correct buildpack for the application.
-- **B)** Ensuring the Docker image is kept up-to-date with security patches.
-- **C)** Relying on SAP to manage all runtime dependencies.
-- **D)** Using only images from the SAP Docker registry.
+- **A)** Using only images from the SAP Docker registry
+- **B)** Ensuring the Docker image is kept up-to-date with security patches
+- **C)** Selecting the correct buildpack for the application.
+- **D)** Relying on SAP to manage all runtime dependencies.
 
 **Answer:**  
-> **B) Ensuring the Docker image is kept up-to-date with security patches.**
+> **B) Ensuring the Docker image is kept up-to-date with security patches**
 
 ---
 
 ### 51. Which statement best describes the difference between SAP Continuous Integration and Delivery (CI/CD) service and Project "Piper" for SAP BTP, Cloud Foundry Runtime?
-- **A)** Project "Piper" is a managed SAP service with predefined pipelines, while SAP CI/CD is open-source and requires manual setup.
-- **B)** SAP CI/CD is suitable for standard deployment processes, while Project "Piper" is better for highly customized, complex workflows.
+- **A)** SAP CI/CD is suitable for standard deployment processes, while Project "Piper" is better for highly customized, complex workflows.
+- **B)** Project "Piper" is a managed SAP service with predefined pipelines, while SAP CI/CD is open-source and requires manual setup.
 - **C)** Both solutions require manual deployment to production.
 - **D)** Only Project "Piper" supports integration with Git repositories.
 
 **Answer:**  
-> **B) SAP CI/CD is suitable for standard deployment processes, while Project "Piper" is better for highly customized, complex workflows.**
+> **A) SAP CI/CD is suitable for standard deployment processes, while Project "Piper" is better for highly customized, complex workflows.**
 
 ---
 
 ### 52. You are tasked with deploying a large-scale enterprise application with multiple microservices, each requiring different technologies and service dependencies. Which deployment approach is LEAST appropriate?
-- **A)** Deploying each component individually using `cf push` and managing dependencies manually.
-- **B)** Packaging the application as an MTA and deploying with MBT or the MTA CF CLI plugin.
-- **C)** Using Business Application Studio for a guided MTA deployment.
-- **D)** Integrating deployment into a CI/CD pipeline using SAP CI/CD or Project "Piper".
+- **A)** Integrating deployment into a CI/CD pipeline using SAP CI/CD or Project "Piper".
+- **B)** Deploying each component individually using `cf push` and managing dependencies manually.
+- **C)** Packaging the application as an MTA and deploying with MBT or the MTA CF CLI plugin.
+- **D)** Using Business Application Studio for a guided MTA deployment.
 
 **Answer:**  
-> **A) Deploying each component individually using `cf push` and managing dependencies manually.**
+> **B) Deploying each component individually using `cf push` and managing dependencies manually.**
 
 ---
 
 ### 54. Which SAP BTP service provides a managed solution for setting up CI/CD pipelines with minimal configuration?
-- **A)** SAP Business Application Studio
+- **A)** SAP Cloud Connector
 - **B)** SAP Continuous Integration and Delivery
-- **C)** SAP Cloud Connector
-- **D)** SAP HANA Cloud
+- **C)** SAP HANA Cloud
+- **D)** SAP Business Application Studio
 
 **Answer:**  
 > **B) SAP Continuous Integration and Delivery**
@@ -578,86 +578,86 @@
 ---
 
 ### 55. When configuring a CI/CD job in SAP Continuous Integration and Delivery, which of the following is required?
-- **A)** A Git repository containing your project source code
-- **B)** A Docker image of your application
-- **C)** A running SAP HANA instance
+- **A)** A Docker image of your application
+- **B)** A running SAP HANA instance
+- **C)** A Git repository containing your project source code
 - **D)** An SAP Fiori launchpad site
 
 **Answer:**  
-> **A) A Git repository containing your project source code**
+> **C) A Git repository containing your project source code**
 
 ---
 
 ### 56. In the context of SAP CI/CD, what is the function of a webhook?
-- **A)** It triggers a pipeline run automatically when changes are pushed to the repository
-- **B)** It deploys the application to production
-- **C)** It manages user authentication
+- **A)** It deploys the application to production
+- **B)** It manages user authentication
+- **C)** It triggers a pipeline run automatically when changes are pushed to the repository
 - **D)** It monitors application performance
 
 **Answer:**  
-> **A) It triggers a pipeline run automatically when changes are pushed to the repository**
+> **C) It triggers a pipeline run automatically when changes are pushed to the repository**
 
 ---
 
 ### 57. Which of the following best describes a pipeline in SAP Continuous Integration and Delivery?
-- **A)** A set of manual deployment steps
-- **B)** A sequence of automated tasks such as build, test, and deploy
-- **C)** A user management tool
+- **A)** A user management tool
+- **B)** A set of manual deployment steps
+- **C)** A sequence of automated tasks such as build, test, and deploy
 - **D)** A type of SAP BTP subaccount
 
 **Answer:**  
-> **B) A sequence of automated tasks such as build, test, and deploy**
+> **C) A sequence of automated tasks such as build, test, and deploy**
 
 ---
 
 ### 58. What must you do to allow SAP Continuous Integration and Delivery to access your source code repository?
-- **A)** Configure repository credentials or a connection in the service
-- **B)** Deploy the repository as an application
+- **A)** Deploy the repository as an application
+- **B)** Configure repository credentials or a connection in the service
 - **C)** Add the repository to the SAP BTP cockpit
 - **D)** No action is required; access is automatic
 
 **Answer:**  
-> **A) Configure repository credentials or a connection in the service**
+> **B) Configure repository credentials or a connection in the service**
 
 ---
 
 ### 59. Which of the following is NOT a typical stage in a CI/CD pipeline as described in the SAP tutorial?
 - **A)** Build
 - **B)** Test
-- **C)** Deploy
-- **D)** Manual code review
+- **C)** Manual code review
+- **D)** Deploy
 
 **Answer:**  
-> **D) Manual code review**
+> **C) Manual code review**
 
 ---
 
 ### 60. Which of the following best describes horizontal scaling in SAP BTP, Cloud Foundry Runtime?
-- **A)** Increasing the memory allocated to each application instance
-- **B)** Increasing the number of application instances to handle more load
-- **C)** Increasing the disk quota for the application
+- **A)** Increasing the disk quota for the application
+- **B)** Increasing the memory allocated to each application instance
+- **C)** Increasing the number of application instances to handle more load
 - **D)** Upgrading the Cloud Foundry CLI
 
 **Answer:**  
-> **B) Increasing the number of application instances to handle more load**
+> **C) Increasing the number of application instances to handle more load**
 
 ---
 
 ### 61. What is the maximum memory you can allocate to a single application instance in SAP BTP, Cloud Foundry Runtime?
 - **A)** 4 GB
 - **B)** 8 GB
-- **C)** 16 GB
-- **D)** 32 GB
+- **C)** 32 GB
+- **D)** 16 GB
 
 **Answer:**  
-> **C) 16 GB**
+> **D) 16 GB**
 
 ---
 
 ### 62. Which of the following is NOT a limit imposed by SAP BTP, Cloud Foundry Runtime?
-- **A)** Maximum application package size
+- **A)** Maximum disk quota per application instance
 - **B)** Maximum number of users per space
-- **C)** Maximum disk quota per application instance
+- **C)** Maximum application package size
 - **D)** Maximum number of instances per application (based on quota)
 
 **Answer:**  
@@ -666,20 +666,20 @@
 ---
 
 ### 63. How can administrators control the maximum resources available to applications in SAP BTP, Cloud Foundry Runtime?
-- **A)** By setting quotas at the organization and space level
-- **B)** By editing the application source code
-- **C)** By modifying the SAP BTP global account
+- **A)** By editing the application source code
+- **B)** By modifying the SAP BTP global account
+- **C)** By setting quotas at the organization and space level
 - **D)** By increasing the number of buildpacks
 
 **Answer:**  
-> **A) By setting quotas at the organization and space level**
+> **C) By setting quotas at the organization and space level**
 
 ---
 
 ### 64. What is the primary benefit of using the Application Autoscaler service in SAP BTP, Cloud Foundry Runtime?
-- **A)** It automatically updates application code
+- **A)** It increases the disk quota for all applications
 - **B)** It dynamically adjusts the number of application instances based on real-time metrics
-- **C)** It increases the disk quota for all applications
+- **C)** It automatically updates application code
 - **D)** It manages user authentication
 
 **Answer:**  
@@ -688,24 +688,24 @@
 ---
 
 ### 65. When using custom metrics for autoscaling in SAP BTP, Cloud Foundry Runtime, what is the recommended submission interval per application instance?
-- **A)** Every 5 minutes
-- **B)** Every 40 seconds
-- **C)** Every 10 seconds
+- **A)** Every 10 seconds
+- **B)** Every 5 minutes
+- **C)** Every 40 seconds
 - **D)** Once per hour
 
 **Answer:**  
-> **B) Every 40 seconds**
+> **C) Every 40 seconds**
 
 ---
 
 ### 66. What is the main purpose of built-in load balancing in SAP BTP, Cloud Foundry Runtime?
-- **A)** To distribute incoming traffic evenly across all running instances of an application
-- **B)** To increase the memory of each application instance
-- **C)** To manage user authentication
+- **A)** To increase the memory of each application instance
+- **B)** To manage user authentication
+- **C)** To distribute incoming traffic evenly across all running instances of an application
 - **D)** To deploy new buildpacks
 
 **Answer:**  
-> **A) To distribute incoming traffic evenly across all running instances of an application**
+> **C) To distribute incoming traffic evenly across all running instances of an application**
 
 ---
 
@@ -732,24 +732,24 @@
 ---
 
 ### 69. How can you check the current number of running instances of your application in Cloud Foundry?
-- **A)** cf app <app-name>
-- **B)** cf scale <app-name>
+- **A)** cf scale <app-name>
+- **B)** cf app <app-name>
 - **C)** cf list-instances <app-name>
 - **D)** cf show-instances
 
 **Answer:**  
-> **A) cf app <app-name>**
+> **B) cf app <app-name>**
 
 ---
 
 ### 70. What should you do to clean up resources after testing the Application Autoscaler?
-- **A)** Unbind and delete the autoscaler service instance, then delete the application
-- **B)** Only stop the application
+- **A)** Only stop the application
+- **B)** Unbind and delete the autoscaler service instance, then delete the application
 - **C)** Only delete the scaling policy file
 - **D)** Restart the application
 
 **Answer:**  
-> **A) Unbind and delete the autoscaler service instance, then delete the application**
+> **B) Unbind and delete the autoscaler service instance, then delete the application**
 
 ---
 
@@ -853,79 +853,79 @@
 ---
 
 ### 80. Which of the following is a primary benefit of canary deployment compared to blue-green deployment?
-- **A)** It requires no additional resources
-- **B)** It allows real-world testing with a subset of users before full rollout
-- **C)** It updates all users at once
-- **D)** It is only used for database migrations
+- **A)** It is only used for database migrations
+- **B)** It updates all users at once
+- **C)** It allows real-world testing with a subset of users before full rollout
+- **D)** It requires no additional resources
 
 **Answer:**  
-> **B) It allows real-world testing with a subset of users before full rollout**
+> **C) It allows real-world testing with a subset of users before full rollout**
 
 ---
 
 ### 81. What is a potential challenge when using canary deployment for stateful applications?
-- **A)** Managing user authentication
-- **B)** Ensuring data consistency and handling database schema changes
-- **C)** Reducing application memory usage
-- **D)** Increasing the number of application routes
+- **A)** Reducing application memory usage
+- **B)** Managing user authentication
+- **C)** Increasing the number of application routes
+- **D)** Ensuring data consistency and handling database schema changes
 
 **Answer:**  
-> **B) Ensuring data consistency and handling database schema changes**
+> **D) Ensuring data consistency and handling database schema changes**
 
 ---
 
 ### 82. During a canary deployment, how is traffic typically routed?
-- **A)** All traffic is sent to the new version immediately
-- **B)** A small percentage of traffic is directed to the new version, while the majority continues to use the stable version
+- **A)** Only internal users can access the new version
+- **B)** All traffic is sent to the new version immediately
 - **C)** Traffic is blocked until deployment is complete
-- **D)** Only internal users can access the new version
+- **D)** A small percentage of traffic is directed to the new version, while the majority continues to use the stable version
 
 **Answer:**  
-> **B) A small percentage of traffic is directed to the new version, while the majority continues to use the stable version**
+> **D) A small percentage of traffic is directed to the new version, while the majority continues to use the stable version**
 
 ---
 
 ### 83. Which scenario is best suited for a canary deployment strategy?
-- **A)** Deploying a critical update that must reach all users instantly
-- **B)** Testing a new feature with a limited group of users to monitor for issues before a full rollout
-- **C)** Migrating a database schema
-- **D)** Deploying static website content
+- **A)** Deploying static website content
+- **B)** Migrating a database schema
+- **C)** Deploying a critical update that must reach all users instantly
+- **D)** Testing a new feature with a limited group of users to monitor for issues before a full rollout
 
 **Answer:**  
-> **B) Testing a new feature with a limited group of users to monitor for issues before a full rollout**
+> **D) Testing a new feature with a limited group of users to monitor for issues before a full rollout**
 
 ---
 
 ### 84. What is the main goal of a rolling app deployment in Cloud Foundry?
-- **A)** To update all application instances simultaneously
-- **B)** To gradually replace old instances with new ones, ensuring some version is always available
-- **C)** To delete the old version before starting the new one
-- **D)** To scale the application to zero before updating
+- **A)** To delete the old version before starting the new one
+- **B)** To scale the application to zero before updating
+- **C)** To update all application instances simultaneously
+- **D)** To gradually replace old instances with new ones, ensuring some version is always available
 
 **Answer:**  
-> **B) To gradually replace old instances with new ones, ensuring some version is always available**
+> **D) To gradually replace old instances with new ones, ensuring some version is always available**
 
 ---
 
 ### 85. Which of the following is a potential drawback of rolling deployments?
-- **A)** All users experience downtime
-- **B)** Rollbacks can be complex for stateful applications or database schema changes
-- **C)** It requires twice the resources of the application
-- **D)** It cannot be automated
+- **A)** It cannot be automated
+- **B)** It requires twice the resources of the application
+- **C)** Rollbacks can be complex for stateful applications or database schema changes
+- **D)** All users experience downtime
 
 **Answer:**  
-> **B) Rollbacks can be complex for stateful applications or database schema changes**
+> **C) Rollbacks can be complex for stateful applications or database schema changes**
 
 ---
 
 ### 86. When using the `cf push APP-NAME --strategy rolling` command, what happens during the deployment?
-- **A)** All old instances are stopped before new ones are started
-- **B)** New instances are started and old ones are stopped in phases, maintaining availability
-- **C)** The application is deleted and redeployed
-- **D)** The deployment fails if any users are connected
+- **A)** The application is deleted and redeployed
+- **B)** The deployment fails if any users are connected
+- **C)** All old instances are stopped before new ones are started
+- **D)** New instances are started and old ones are stopped in phases, maintaining availability
 
 **Answer:**  
-> **B) New instances are started and old ones are stopped in phases, maintaining availability**
+> **D) New instances are started and old ones are stopped in phases, maintaining availability**
 
 ---
 
@@ -941,31 +941,31 @@
 ---
 
 ### 88. What is a key difference between rolling deployment and blue-green deployment?
-- **A)** Rolling deployment requires two complete environments
-- **B)** Blue-green deployment allows for full testing of the new version before switching traffic, while rolling deployment does not
-- **C)** Rolling deployment is only for database updates
-- **D)** Blue-green deployment cannot be automated
+- **A)** Blue-green deployment allows for full testing of the new version before switching traffic, while rolling deployment does not
+- **B)** Rolling deployment requires two complete environments
+- **C)** Blue-green deployment cannot be automated
+- **D)** Rolling deployment is only for database updates
 
 **Answer:**  
-> **B) Blue-green deployment allows for full testing of the new version before switching traffic, while rolling deployment does not**
+> **A) Blue-green deployment allows for full testing of the new version before switching traffic, while rolling deployment does not**
 
 ---
 
 ### 89. What is the primary goal of a blue-green deployment strategy in SAP BTP, Cloud Foundry Runtime?
-- **A)** To update all application instances at once
-- **B)** To minimize downtime and risk by running two environments (blue and green) and switching traffic only after testing the new version
+- **A)** To minimize downtime and risk by running two environments (blue and green) and switching traffic only after testing the new version
+- **B)** To update all application instances at once
 - **C)** To reduce the number of application routes
 - **D)** To delete the old version before deploying the new one
 
 **Answer:**  
-> **B) To minimize downtime and risk by running two environments (blue and green) and switching traffic only after testing the new version**
+> **A) To minimize downtime and risk by running two environments (blue and green) and switching traffic only after testing the new version**
 
 ---
 
 ### 90. In a blue-green deployment, what does the "green" environment represent?
-- **A)** The current live production environment
+- **A)** The backup environment
 - **B)** The new version of the application, deployed and tested before becoming live
-- **C)** The backup environment
+- **C)** The current live production environment
 - **D)** The database server
 
 **Answer:**  
@@ -974,46 +974,46 @@
 ---
 
 ### 92. What is a key advantage of the blue-green deployment strategy when introducing breaking changes (such as a new required field) to an application?
-- **A)** It allows you to test the new version in isolation before switching all users to it
-- **B)** It requires fewer resources than other strategies
+- **A)** It requires fewer resources than other strategies
+- **B)** It allows you to test the new version in isolation before switching all users to it
 - **C)** It updates the database schema automatically
 - **D)** It prevents the need for application testing
 
 **Answer:**  
-> **A) It allows you to test the new version in isolation before switching all users to it**
+> **B) It allows you to test the new version in isolation before switching all users to it**
 
 ---
 
 ### 93. What happens to the old (blue) environment after the green environment becomes productive in a blue-green deployment?
-- **A)** It continues to serve traffic
-- **B)** It is deleted or stopped to free up resources
-- **C)** It is merged with the green environment
+- **A)** It is merged with the green environment
+- **B)** It continues to serve traffic
+- **C)** It is deleted or stopped to free up resources
 - **D)** It is used for database backups
 
 **Answer:**  
-> **B) It is deleted or stopped to free up resources**
+> **C) It is deleted or stopped to free up resources**
 
 ---
 
 ### 94. Which of the following is a best practice when performing a blue-green deployment?
-- **A)** Skip the testing phase to speed up deployment
-- **B)** Thoroughly test the green environment before switching traffic
+- **A)** Thoroughly test the green environment before switching traffic
+- **B)** Skip the testing phase to speed up deployment
 - **C)** Immediately delete the blue environment before testing the green one
 - **D)** Use the same route for both blue and green environments simultaneously
 
 **Answer:**  
-> **B) Thoroughly test the green environment before switching traffic**
+> **A) Thoroughly test the green environment before switching traffic**
 
 ---
 
 ### 95. What is the purpose of the "--strategy blue-green" option in the cf deploy command?
-- **A)** It enables rolling deployment
-- **B)** It automates the blue-green deployment process, including route switching and cleanup
+- **A)** It automates the blue-green deployment process, including route switching and cleanup
+- **B)** It enables rolling deployment
 - **C)** It updates the application without downtime but does not switch routes
 - **D)** It is only used for canary deployments
 
 **Answer:**  
-> **B) It automates the blue-green deployment process, including route switching and cleanup**
+> **A) It automates the blue-green deployment process, including route switching and cleanup**
 
 ---
 
@@ -1062,20 +1062,20 @@
 ---
 
 ### 100. What is the difference between `cf restage` and `cf restart`?
-- **A)** `cf restage` recompiles the application with updated environment or dependencies, while `cf restart` simply restarts the app using the existing droplet
-- **B)** `cf restart` updates the application code, while `cf restage` does not
-- **C)** Both commands do exactly the same thing
-- **D)** `cf restage` deletes the application
+- **A)** Both commands do exactly the same thing
+- **B)** `cf restage` deletes the application
+- **C)** `cf restage` recompiles the application with updated environment or dependencies, while `cf restart` simply restarts the app using the existing droplet
+- **D)** `cf restart` updates the application code, while `cf restage` does not
 
 **Answer:**  
-> **A) `cf restage` recompiles the application with updated environment or dependencies, while `cf restart` simply restarts the app using the existing droplet**
+> **C) `cf restage` recompiles the application with updated environment or dependencies, while `cf restart` simply restarts the app using the existing droplet**
 
 ---
 
 ### 102. What happens when an application instance crashes in Cloud Foundry?
-- **A)** The instance is permanently stopped
+- **A)** The application is deleted
 - **B)** Cloud Foundry automatically attempts to restart the instance up to 200 times, with increasing wait times
-- **C)** The application is deleted
+- **C)** The instance is permanently stopped
 - **D)** The application is restaged
 
 **Answer:**  
@@ -1085,22 +1085,22 @@
 
 ### 103. What is the purpose of the evacuation process in Cloud Foundry?
 - **A)** To scale the application
-- **B)** To relocate application instances to new VMs during platform updates or VM replacements, ensuring continuity
-- **C)** To delete old application versions
-- **D)** To update environment variables
+- **B)** To update environment variables
+- **C)** To relocate application instances to new VMs during platform updates or VM replacements, ensuring continuity
+- **D)** To delete old application versions
 
 **Answer:**  
-> **B) To relocate application instances to new VMs during platform updates or VM replacements, ensuring continuity**
+> **C) To relocate application instances to new VMs during platform updates or VM replacements, ensuring continuity**
 
 ---
 
 ### 104. How does a shutdown event differ from a crash event in Cloud Foundry?
-- **A)** Shutdown is always manual, crash is always automatic
+- **A)** Both are the same
 - **B)** Shutdown can be manual (e.g., `cf stop`) or automatic (e.g., failed health checks), while crash is always due to application failure
-- **C)** Both are the same
-- **D)** Crash events never restart the application
+- **C)** Crash events never restart the application
+- **D)** Shutdown is always manual, crash is always automatic
 
-**Answer:**
+**Answer:**  
 > **B) Shutdown can be manual (e.g., `cf stop`) or automatic (e.g., failed health checks), while crash is always due to application failure**
 
 ---
