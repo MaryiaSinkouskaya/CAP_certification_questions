@@ -93,12 +93,12 @@
 
 ### 9. Which of the following is a best practice when extending SAP S/4HANA Cloud?
 - **A)** Modify the core system directly
-- **B)** Keep the core clean and use APIs for extensions
+- **B)** Avoid using SAP BTP for extensions
 - **C)** Only use key-user extensibility for all requirements
-- **D)** Avoid using SAP BTP for extensions
+- **D)** Keep the core clean and use APIs for extensions
 
 **Answer:**  
-> **B) Keep the core clean and use APIs for extensions**
+> **D) Keep the core clean and use APIs for extensions**
 
 ---
 
@@ -127,12 +127,12 @@
 
 ### 12. What is the purpose of the `cds init` command in the CAP CLI?
 - **A)** To start the CAP server
-- **B)** To initialize a new CAP project with the recommended folder structure
+- **B)** To generate OData services from an existing database
 - **C)** To deploy the application to Cloud Foundry
-- **D)** To generate OData services from an existing database
+- **D)** To initialize a new CAP project with the recommended folder structure
 
 **Answer:**  
-> **B) To initialize a new CAP project with the recommended folder structure**
+> **D) To initialize a new CAP project with the recommended folder structure**
 
 ---
 
@@ -151,34 +151,34 @@ _Tip: For CAP Java applications, you can use `mvn cds:watch` instead._
 
 ### 14. What is typically stored in the `db/data` folder of a CAP project?
 - **A)** Source code for services
-- **B)** Sample data in CSV or JSON format for database initialization
+- **B)** CAP configuration files
 - **C)** UI5 application files
-- **D)** CAP configuration files
+- **D)** Sample data in CSV or JSON format for database initialization
 
 **Answer:**  
-> **B) Sample data in CSV or JSON format for database initialization**
+> **D) Sample data in CSV or JSON format for database initialization**
 
 ---
 
 ### 15. What is the main purpose of the `db` folder in a CAP project?
 - **A)** To store service implementation files
-- **B)** To define the data model and provide database-related artifacts
+- **B)** To manage user authentication
 - **C)** To store deployment scripts
-- **D)** To manage user authentication
+- **D)** To define the data model and provide database-related artifacts
 
 **Answer:**  
-> **B) To define the data model and provide database-related artifacts**
+> **D) To define the data model and provide database-related artifacts**
 
 ---
 
 ### 16. What is typically defined in the `schema.cds` file in the `db` folder?
 - **A)** Service definitions
-- **B)** Data model entities, types, and associations
-- **C)** UI annotations
+- **B)** UI annotations
+- **C)** Data model entities, types, and associations
 - **D)** Application configuration
 
 **Answer:**  
-> **B) Data model entities, types, and associations**
+> **C) Data model entities, types, and associations**
 
 ---
 
@@ -365,12 +365,12 @@ _Tip: For CAP Java applications, you can use `mvn cds:watch` instead._
 
 ### 33. In xs-security.json, what is a "role-template"?
 - **A)** A template for creating new users
-- **B)** A definition that groups scopes into roles that can be assigned to users
-- **C)** A database migration script
+- **B)** A database migration script
+- **C)** A definition that groups scopes into roles that can be assigned to users
 - **D)** A UI component
 
 **Answer:**  
-> **B) A definition that groups scopes into roles that can be assigned to users**
+> **C) A definition that groups scopes into roles that can be assigned to users**
 
 ---
 
@@ -426,12 +426,12 @@ entity Orders { ... }
 
 ### 38. Which library provides built-in support for multitenancy in CAP applications?
 - **A)** @sap/cds-dk
-- **B)** @sap/cds-mtxs
+- **B)** @sap/cds-hana
 - **C)** @sap/cds-odata
-- **D)** @sap/cds-hana
+- **D)** @sap/cds-mtxs
 
 **Answer:**  
-> **B) @sap/cds-mtxs**
+> **D) @sap/cds-mtxs**
 
 ---
 
@@ -449,24 +449,24 @@ entity Orders { ... }
 
 ### 40. In the context of SAP BTP, what is a role collection?
 - **A)** A group of users
-- **B)** A set of roles that can be assigned to a user
+- **B)** A type of database schema
 - **C)** A list of applications
-- **D)** A type of database schema
+- **D)** A set of roles that can be assigned to a user
 
 **Answer:**  
-> **B) A set of roles that can be assigned to a user**
+> **D) A set of roles that can be assigned to a user**
 
 ---
 
 ### 41. Which SAP BTP environments can you deploy a CAP application to? (Choose 2)
 - **A)** SAP BTP, Cloud Foundry Runtime
-- **B)** SAP BTP, Kyma Runtime
+- **B)** SAP ECC
 - **C)** SAP NetWeaver
-- **D)** SAP ECC
+- **D)** SAP BTP, Kyma Runtime
 
 **Answer:**  
 > **A) SAP BTP, Cloud Foundry Runtime**  
-> **B) SAP BTP, Kyma Runtime**
+> **D) SAP BTP, Kyma Runtime**
 
 ---
 
@@ -529,12 +529,12 @@ entity Orders { ... }
 
 ### 47. In the context of MTA, what is a "module"?
 - **A)** A user account
-- **B)** A subcomponent of the application, such as a database, service, or UI, developed with a specific technology
+- **B)** A configuration file
 - **C)** A deployment script
-- **D)** A configuration file
+- **D)** A subcomponent of the application, such as a database, service, or UI, developed with a specific technology
 
 **Answer:**  
-> **B) A subcomponent of the application, such as a database, service, or UI, developed with a specific technology**
+> **D) A subcomponent of the application, such as a database, service, or UI, developed with a specific technology**
 
 ---
 
@@ -575,12 +575,12 @@ entity Orders { ... }
 
 ### 51. What is blue-green deployment?
 - **A)** Deploying to two different cloud providers at the same time
-- **B)** A deployment strategy where a new version (green) is deployed alongside the old version (blue), and traffic is switched after successful testing
-- **C)** Deploying only to development environments
+- **B)** Deploying only to development environments
+- **C)** A deployment strategy where a new version (green) is deployed alongside the old version (blue), and traffic is switched after successful testing
 - **D)** A method for database migration
 
 **Answer:**  
-> **B) A deployment strategy where a new version (green) is deployed alongside the old version (blue), and traffic is switched after successful testing**
+> **C) A deployment strategy where a new version (green) is deployed alongside the old version (blue), and traffic is switched after successful testing**
 
 ---
 
