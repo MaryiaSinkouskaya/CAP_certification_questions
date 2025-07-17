@@ -27,10 +27,10 @@
 ---
 
 ### 3. What is the main purpose of the SAP S/4HANA Virtual Data Model?
-- **A)** To provide direct access to database tables
+- **A)** To manage user authorizations
 - **B)** To offer a business-oriented view of data
 - **C)** To create custom user interfaces
-- **D)** To manage user authorizations
+- **D)** To provide direct access to database tables
 
 **Answer:**  
 > **B) To offer a business-oriented view of data**
@@ -39,9 +39,9 @@
 
 ### 4. Which technology is commonly used to expose the SAP S/4HANA Virtual Data Model?
 - **A)** OData services
-- **B)** FTP
-- **C)** SOAP web services
-- **D)** Email
+- **B)** Email
+- **C)** FTP
+- **D)** SOAP web services
 
 **Answer:**  
 > **A) OData services**
@@ -49,10 +49,10 @@
 ---
 
 ### 5. What does the Virtual Data Model (VDM) use to represent business objects?
-- **A)** Database tables
+- **A)** Java classes
 - **B)** CDS views
-- **C)** Excel files
-- **D)** Java classes
+- **C)** Database tables
+- **D)** Excel files
 
 **Answer:**  
 > **B) CDS views**
@@ -60,10 +60,10 @@
 ---
 
 ### 6. Which of the following is a benefit of using the Virtual Data Model in SAP S/4HANA?
-- **A)** It allows direct changes to the database schema
+- **A)** It is only available for on-premise systems
 - **B)** It provides reusable, semantically rich data models
-- **C)** It replaces all SAP Fiori apps
-- **D)** It is only available for on-premise systems
+- **C)** It allows direct changes to the database schema
+- **D)** It replaces all SAP Fiori apps
 
 **Answer:**  
 > **B) It provides reusable, semantically rich data models**
@@ -71,28 +71,28 @@
 ---
 
 ### 7. Which of the following are advantages of using the OData Virtual Data Model (VDM) in the SAP Cloud SDK? (Choose 3)
-- **A)** Lets you use common SQL queries
-- **B)** Makes it easy to create, update, and delete data
+- **A)** Makes it easy to create, update, and delete data
+- **B)** Lets you use common SQL queries
 - **C)** Checks that you use the right types for functions
 - **D)** Helps you with auto-complete for names and properties
 - **E)** Gives you ready-made database procedures
 
 **Answer:**  
-> **B) Makes it easy to create, update, and delete data**  
+> **A) Makes it easy to create, update, and delete data**  
 > **C) Checks that you use the right types for functions**  
 > **D) Helps you with auto-complete for names and properties**
 
 ---
 
 ### 8. Which of the following are features of the SAP S/4HANA Virtual Data Model? (Choose 2)
-- **A)** It shows how different entities are related.
-- **B)** It lets you access database tables directly.
-- **C)** It gives you a built-in UI to query tables.
-- **D)** It enriches the entities with business semantics.
+- **A)** It gives you a built-in UI to query tables.
+- **B)** It enriches the entities with business semantics.
+- **C)** It lets you access database tables directly.
+- **D)** It shows how different entities are related.
 
 **Answer:**  
-> **A) It shows how different entities are related.**  
-> **D) It enriches the entities with business semantics.**
+> **B) It enriches the entities with business semantics.**  
+> **D) It shows how different entities are related.**
 
 ---
 
@@ -108,10 +108,10 @@
 ---
 
 ### 10. What is the main purpose of the SAP Cloud SDK?
-- **A)** To design user interfaces for SAP Fiori
+- **A)** To create ABAP reports
 - **B)** To simplify the development of cloud applications that integrate with SAP solutions
-- **C)** To manage SAP HANA database backups
-- **D)** To create ABAP reports
+- **C)** To design user interfaces for SAP Fiori
+- **D)** To manage SAP HANA database backups
 
 **Answer:**  
 > **B) To simplify the development of cloud applications that integrate with SAP solutions**
@@ -141,10 +141,10 @@
 ---
 
 ### 13. Which of the following is a benefit of using the SAP Cloud SDK?
-- **A)** Automatic generation of SAP Fiori apps
+- **A)** Direct modification of SAP S/4HANA core code
 - **B)** Type-safe access to SAP APIs
-- **C)** Direct modification of SAP S/4HANA core code
-- **D)** Free SAP HANA database hosting
+- **C)** Free SAP HANA database hosting
+- **D)** Automatic generation of SAP Fiori apps
 
 **Answer:**  
 > **B) Type-safe access to SAP APIs**
@@ -152,10 +152,10 @@
 ---
 
 ### 14. The SAP Cloud SDK helps developers by:
-- **A)** Providing tools for ABAP development only
+- **A)** Limiting access to SAP APIs
 - **B)** Offering libraries and tools for cloud-native application development
-- **C)** Limiting access to SAP APIs
-- **D)** Replacing SAP Business Technology Platform
+- **C)** Replacing SAP Business Technology Platform
+- **D)** Providing tools for ABAP development only
 
 **Answer:**  
 > **B) Offering libraries and tools for cloud-native application development**
@@ -176,10 +176,10 @@
 ---
 
 ### 16. Which of the following is a typical use case for the SAP Cloud SDK?
-- **A)** Directly modifying SAP S/4HANA core code
+- **A)** Building SAP HANA database tables
 - **B)** Consuming OData APIs from SAP S/4HANA in a cloud-native application
 - **C)** Creating SAP GUI scripts
-- **D)** Building SAP HANA database tables
+- **D)** Directly modifying SAP S/4HANA core code
 
 **Answer:**  
 > **B) Consuming OData APIs from SAP S/4HANA in a cloud-native application**
@@ -189,8 +189,8 @@
 ### 17. When would you use the SAP Cloud SDK’s Virtual Data Model (VDM)?
 - **A)** When you want to write raw SQL queries against SAP HANA
 - **B)** When you want type-safe, object-oriented access to SAP S/4HANA business data via OData
-- **C)** When you need to design SAP Fiori Elements pages
-- **D)** When you want to automate SAP GUI transactions
+- **C)** When you want to automate SAP GUI transactions
+- **D)** When you need to design SAP Fiori Elements pages
 
 **Answer:**  
 > **B) When you want type-safe, object-oriented access to SAP S/4HANA business data via OData**
@@ -209,24 +209,24 @@
 ---
 
 ### 19. What does the `cf push` command do?
-- **A)** Deletes an application
-- **B)** Deploys an application to Cloud Foundry
-- **C)** Lists all available services
-- **D)** Logs out of Cloud Foundry
+- **A)** Deploys an application to Cloud Foundry
+- **B)** Deletes an application
+- **C)** Logs out of Cloud Foundry
+- **D)** Lists all available services
 
 **Answer:**  
-> **B) Deploys an application to Cloud Foundry**
+> **A) Deploys an application to Cloud Foundry**
 
 ---
 
 ### 20. Which command lists all applications in the current Cloud Foundry space?
-- **A)** cf apps
-- **B)** cf list
-- **C)** cf show
+- **A)** cf list
+- **B)** cf show
+- **C)** cf apps
 - **D)** cf services
 
 **Answer:**  
-> **A) cf apps**
+> **C) cf apps**
 
 ---
 
@@ -286,13 +286,13 @@
 ---
 
 ### 26. What happens if no buildpack is specified when deploying an app?
-- **A)** The deployment fails
-- **B)** Cloud Foundry automatically detects and applies a suitable buildpack
-- **C)** The app is deployed without dependencies
-- **D)** The app is deployed as a static file
+- **A)** The app is deployed as a static file
+- **B)** The app is deployed without dependencies
+- **C)** The deployment fails
+- **D)** Cloud Foundry automatically detects and applies a suitable buildpack
 
 **Answer:**  
-> **B) Cloud Foundry automatically detects and applies a suitable buildpack**
+> **D) Cloud Foundry automatically detects and applies a suitable buildpack**
 
 ---
 
@@ -309,45 +309,45 @@
 
 ### 28. Which of the following statements is true?
 - **A)** `cf push` is used for both single apps and MTA archives
-- **B)** `cf deploy` is only for updating the Cloud Foundry CLI
-- **C)** `cf push` is for single apps, while `cf deploy` is for MTA archives
-- **D)** Both commands do exactly the same thing
+- **B)** Both commands do exactly the same thing
+- **C)** `cf deploy` is only for updating the Cloud Foundry CLI
+- **D)** `cf push` is for single apps, while `cf deploy` is for MTA archives
 
 **Answer:**  
-> **C) `cf push` is for single apps, while `cf deploy` is for MTA archives**
+> **D) `cf push` is for single apps, while `cf deploy` is for MTA archives**
 
 ---
 
 ### 29. In a typical SAP CAP Model application, when do you usually need to use the SAP Cloud SDK directly?
 - **A)** When connecting to remote services using CAP’s built-in features
-- **B)** When you need to perform custom logic, such as retrieving a JWT token from the request object
-- **C)** When building Fiori UIs
-- **D)** When writing ABAP code
+- **B)** When building Fiori UIs
+- **C)** When writing ABAP code
+- **D)** When you need to perform custom logic, such as retrieving a JWT token from the request object
 
 **Answer:**  
-> **B) When you need to perform custom logic, such as retrieving a JWT token from the request object**
+> **D) When you need to perform custom logic, such as retrieving a JWT token from the request object**
 
 ---
 
 ### 30. Which scenario requires you to use the SAP Cloud SDK instead of the CAP Model?
-- **A)** When building applications that use SAP HANA as the database
-- **B)** When building applications with MongoDB or other databases not supported by CAP Model
-- **C)** When using only standard SAP Fiori apps
-- **D)** When deploying to SAP S/4HANA On-Premise
+- **A)** When using only standard SAP Fiori apps
+- **B)** When deploying to SAP S/4HANA On-Premise
+- **C)** When building applications with MongoDB or other databases not supported by CAP Model
+- **D)** When building applications that use SAP HANA as the database
 
 **Answer:**  
-> **B) When building applications with MongoDB or other databases not supported by CAP Model**
+> **C) When building applications with MongoDB or other databases not supported by CAP Model**
 
 ---
 
 ### 31. If you have an existing Java application that was not built with the CAP Model, how can you add SAP integration features?
-- **A)** Only by rewriting the application in CAP Model
-- **B)** By using the SAP Cloud SDK tool set
-- **C)** By using SAP GUI scripting
-- **D)** By exporting data to Excel
+- **A)** By exporting data to Excel
+- **B)** By using SAP GUI scripting
+- **C)** By using the SAP Cloud SDK tool set
+- **D)** Only by rewriting the application in CAP Model
 
 **Answer:**  
-> **B) By using the SAP Cloud SDK tool set**
+> **C) By using the SAP Cloud SDK tool set**
 
 ---
 
@@ -363,24 +363,24 @@
 ---
 
 ### 33. What is the recommended approach for connecting to remote systems in a CAP application?
-- **A)** Use SAP Cloud SDK directly for all connections
-- **B)** Use CAP’s built-in connection features, which use SAP Cloud SDK behind the scenes
-- **C)** Use only manual HTTP requests
-- **D)** Use SAP GUI
+- **A)** Use only manual HTTP requests
+- **B)** Use SAP GUI
+- **C)** Use CAP’s built-in connection features, which use SAP Cloud SDK behind the scenes
+- **D)** Use SAP Cloud SDK directly for all connections
 
 **Answer:**  
-> **B) Use CAP’s built-in connection features, which use SAP Cloud SDK behind the scenes**
+> **C) Use CAP’s built-in connection features, which use SAP Cloud SDK behind the scenes**
 
 ---
 
 ### 34. How does the SAP Cloud Application Programming Model (CAP) use the SAP Cloud SDK?
-- **A)** CAP uses the SAP Cloud SDK behind the scenes to connect to remote systems and manage technical details
-- **B)** CAP and SAP Cloud SDK cannot be used together
+- **A)** CAP and SAP Cloud SDK cannot be used together
+- **B)** CAP only uses SAP Cloud SDK for user interface development
 - **C)** CAP replaces the SAP Cloud SDK for all integration tasks
-- **D)** CAP only uses SAP Cloud SDK for user interface development
+- **D)** CAP uses the SAP Cloud SDK behind the scenes to connect to remote systems and manage technical details
 
 **Answer:**  
-> **A) CAP uses the SAP Cloud SDK behind the scenes to connect to remote systems and manage technical details**
+> **D) CAP uses the SAP Cloud SDK behind the scenes to connect to remote systems and manage technical details**
 
 ---
 
@@ -405,12 +405,12 @@
 ---
 
 ### 37. Where can you retrieve your API key for testing APIs in the SAP Business Accelerator Hub?
-- **A)** From the API documentation page on the SAP Business Accelerator Hub
-- **B)** From SAP Business Application Studio
-- **C)** From the SAP Cloud Connector
+- **A)** From SAP Business Application Studio
+- **B)** From the SAP Cloud Connector
+- **C)** From the API documentation page on the SAP Business Accelerator Hub
 
 **Answer:**  
-> **A) From the API documentation page on the SAP Business Accelerator Hub**
+> **C) From the API documentation page on the SAP Business Accelerator Hub**
 
 ---
 
@@ -428,23 +428,23 @@
 
 ### 39. What is the main difference between the standard Cloud Foundry java_buildpack and the sap_java_buildpack?
 - **A)** sap_java_buildpack only supports Tomcat, while java_buildpack supports TomEE
-- **B)** sap_java_buildpack provides additional containers for TomEE and TomEE7
+- **B)** sap_java_buildpack does not support environment variables
 - **C)** java_buildpack is only for SAP BTP, while sap_java_buildpack is for any Cloud Foundry
-- **D)** sap_java_buildpack does not support environment variables
+- **D)** sap_java_buildpack provides additional containers for TomEE and TomEE7
 
 **Answer:**  
-> **B) sap_java_buildpack provides additional containers for TomEE and TomEE7**
+> **D) sap_java_buildpack provides additional containers for TomEE and TomEE7**
 
 ---
 
 ### 40. When deploying a Java application to Cloud Foundry, which file is used to specify the buildpack, memory allocation, and environment variables?
-- **A)** pom.xml
-- **B)** manifest.yml
-- **C)** application.properties
-- **D)** build.gradle
+- **A)** application.properties
+- **B)** build.gradle
+- **C)** manifest.yml
+- **D)** pom.xml
 
 **Answer:**  
-> **B) manifest.yml**
+> **C) manifest.yml**
 
 ---
 
@@ -548,35 +548,35 @@
 ---
 
 ### 50. What happens when a circuit breaker in SAP Cloud SDK switches to the OPEN state?
-- **A)** All remote service calls are retried immediately
-- **B)** No more remote service calls are made for a timeout period
-- **C)** The application is restarted
-- **D)** The cache is cleared
+- **A)** No more remote service calls are made for a timeout period
+- **B)** The application is restarted
+- **C)** The cache is cleared
+- **D)** All remote service calls are retried immediately
 
 **Answer:**  
-> **B) No more remote service calls are made for a timeout period**
+> **A) No more remote service calls are made for a timeout period**
 
 ---
 
 ### 51. In the Bulkhead pattern, what occurs if the number of concurrent requests exceeds the configured threshold?
 - **A)** All requests are queued
-- **B)** Further requests are automatically stopped until existing requests are completed
-- **C)** The application crashes
-- **D)** Requests are redirected to another service
+- **B)** The application crashes
+- **C)** Requests are redirected to another service
+- **D)** Further requests are automatically stopped until existing requests are completed
 
 **Answer:**  
-> **B) Further requests are automatically stopped until existing requests are completed**
+> **D) Further requests are automatically stopped until existing requests are completed**
 
 ---
 
 ### 52. What is the purpose of a fallback function in SAP Cloud SDK’s resilience features?
-- **A)** To retry failed requests indefinitely
-- **B)** To provide an alternative result, such as cached data, when a remote service is unavailable
+- **A)** To provide an alternative result, such as cached data, when a remote service is unavailable
+- **B)** To retry failed requests indefinitely
 - **C)** To log errors only
 - **D)** To increase the timeout duration
 
 **Answer:**  
-> **B) To provide an alternative result, such as cached data, when a remote service is unavailable**
+> **A) To provide an alternative result, such as cached data, when a remote service is unavailable**
 
 ---
 
@@ -593,34 +593,34 @@
 
 ### 54. What underlying technology does SAP Cloud SDK use for caching?
 - **A)** Redis
-- **B)** JCache
-- **C)** Memcached
-- **D)** File system
+- **B)** Memcached
+- **C)** File system
+- **D)** JCache
 
 **Answer:**  
-> **B) JCache**
+> **D) JCache**
 
 ---
 
 ### 55. Which statement about caching in SAP Cloud SDK is correct?
-- **A)** Caching is not tenant-aware and should be avoided in multi-tenant applications
-- **B)** SAP Cloud SDK handles tenant-aware caching automatically
+- **A)** SAP Cloud SDK handles tenant-aware caching automatically
+- **B)** Caching is not tenant-aware and should be avoided in multi-tenant applications
 - **C)** You must implement all caching logic manually
 - **D)** Caching is only available for on-premise deployments
 
 **Answer:**  
-> **B) SAP Cloud SDK handles tenant-aware caching automatically**
+> **A) SAP Cloud SDK handles tenant-aware caching automatically**
 
 ---
 
 ### 56. What is the main purpose of using destinations in SAP BTP?
-- **A)** To store user passwords
-- **B)** To define and manage connections to remote systems and services
+- **A)** To define and manage connections to remote systems and services
+- **B)** To store user passwords
 - **C)** To deploy applications to Cloud Foundry
 - **D)** To create new SAP users
 
 **Answer:**  
-> **B) To define and manage connections to remote systems and services**
+> **A) To define and manage connections to remote systems and services**
 
 ---
 
@@ -658,13 +658,13 @@
 ---
 
 ### 60. What is the main purpose of the `cf restage` command in Cloud Foundry?
-- **A)** To restart an application
-- **B)** To re-run the buildpack and stage the application again without changing the code
-- **C)** To delete an application
-- **D)** To update the application’s manifest file
+- **A)** To re-run the buildpack and stage the application again without changing the code
+- **B)** To restart an application
+- **C)** To update the application’s manifest file
+- **D)** To delete an application
 
 **Answer:**  
-> **B) To re-run the buildpack and stage the application again without changing the code**
+> **A) To re-run the buildpack and stage the application again without changing the code**
 
 ---
 
