@@ -633,3 +633,82 @@ entity Orders { ... }
 
 ---
 
+
+### 57. What is the primary purpose of the `cds compile` command in a CAP project?
+- **A)** To start the CAP development server
+- **B)** To generate database-specific artifacts (e.g., SQL, EDMX) from CDS models
+- **C)** To deploy the application to Cloud Foundry
+- **D)** To install project dependencies
+
+**Answer:**
+> **B) To generate database-specific artifacts (e.g., SQL, EDMX) from CDS models**
+
+---
+
+### 58. What is the main purpose of the `cds add pipeline` command in a CAP project?
+- **A)** To add CI/CD pipeline configuration files to your project
+- **B)** To start the CAP development server
+- **C)** To deploy the application to SAP BTP
+- **D)** To generate database artifacts
+
+**Answer:**
+> **A) To add CI/CD pipeline configuration files to your project**
+
+---
+
+### 59. After running `cds add pipeline` in your CAP project, which of the following files or folders are typically created? (Choose 2)
+- **A)** `.pipeline/` directory with pipeline configuration
+- **B)** `package.json` file
+- **C)** `.github/workflows/` directory
+- **D)** Jenkinsfile or similar pipeline descriptor
+
+**Answer:**
+> **A) `.pipeline/` directory with pipeline configuration**  
+> **D) Jenkinsfile or similar pipeline descriptor**
+
+---
+
+### 60. Which scenario best justifies using the `cds add pipeline` command in a CAP project?
+- **A)** You want to enable automated build and deployment processes for your project
+- **B)** You want to add a new database entity
+- **C)** You want to generate OData services
+- **D)** You want to update project dependencies
+
+**Answer:**
+> **A) You want to enable automated build and deployment processes for your project**
+
+---
+
+### 61. What is the general purpose of the `cds add` command in a CAP project?
+- **A)** To add features, modules, or capabilities to your project (such as samples, pipeline, or hana)
+- **B)** To start the CAP development server
+- **C)** To deploy the application to SAP BTP
+- **D)** To remove unused dependencies
+
+**Answer:**
+> **A) To add features, modules, or capabilities to your project (such as samples, pipeline, or hana)**
+
+---
+
+### 62. Which of the following are valid options you can use with the `cds add` command? (Choose 2)
+- **A)** `cds add hana`
+- **B)** `cds add pipeline`
+- **C)** `cds add deployer`
+- **D)** `cds add remove`
+
+**Answer:**
+> **A) `cds add hana`**  
+> **B) `cds add pipeline`**
+
+---
+
+### 63. Which scenario best justifies using the `cds add hana` command in a CAP project?
+- **A)** You want to enable SAP HANA-specific features and deployment for your project
+- **B)** You want to add a new UI module
+- **C)** You want to update project dependencies
+- **D)** You want to remove the database module
+
+**Answer:**
+> **A) You want to enable SAP HANA-specific features and deployment for your project**
+
+---
