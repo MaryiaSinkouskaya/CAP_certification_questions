@@ -296,4 +296,168 @@
 
 ---
 
+### 28. What is a Kubernetes cluster?
+- **A)** A single virtual machine running containers
+- **B)** A set of machines (nodes) that run containerized applications, managed by a control plane
+- **C)** A group of Docker images
+- **D)** A type of network policy
+
+**Answer:**  
+> **B) A set of machines (nodes) that run containerized applications, managed by a control plane**
+
+---
+
+### 29. What is the main responsibility of the master node (control plane) in a Kubernetes cluster?
+- **A)** Running application containers
+- **B)** Providing persistent storage
+- **C)** Storing application logs
+- **D)** Managing the cluster, scheduling containers, and providing the cluster API
+
+**Answer:**  
+> **D) Managing the cluster, scheduling containers, and providing the cluster API**
+
+---
+
+### 30. Which of the following statements is TRUE about worker nodes in a Kubernetes cluster?
+- **A)** They manage the cluster and schedule containers
+- **B)** They store cluster configuration
+- **C)** They expose the Kubernetes API
+- **D)** They run the actual application containers
+
+**Answer:**  
+> **D) They run the actual application containers**
+
+---
+
+### 31. What is the function of the kube-apiserver component in Kubernetes?
+- **A)** It stores application data
+- **B)** It runs user applications
+- **C)** It exposes the Kubernetes API as a RESTful API for clients like kubectl
+- **D)** It manages persistent storage
+
+**Answer:**  
+> **C) It exposes the Kubernetes API as a RESTful API for clients like kubectl**
+
+---
+
+### 32. What is the primary purpose of labels in Kubernetes?
+- **A)** To store sensitive information about objects
+- **B)** To provide persistent storage for Pods
+- **C)** To identify and group objects using key-value pairs
+- **D)** To manage rolling updates
+
+**Answer:**  
+> **C) To identify and group objects using key-value pairs**
+
+---
+
+### 33. What is a label selector in Kubernetes?
+- **A)** A tool for managing namespaces
+- **B)** A container image version
+- **C)** A type of annotation
+- **D)** A query for selecting objects based on their labels
+
+**Answer:**  
+> **D) A query for selecting objects based on their labels**
+
+---
+
+### 34. Which of the following is TRUE about the use of labels and selectors in Kubernetes Services?
+- **A)** Services use label selectors to identify which Pods to target
+- **B)** Services can only target a single Pod at a time
+- **C)** Labels are only used for user interface display
+- **D)** Selectors are used to assign IP addresses to Pods
+
+**Answer:**  
+> **A) Services use label selectors to identify which Pods to target**
+
+---
+
+### 36. Which file is required for `kubectl` to authenticate and connect to a Kubernetes cluster?
+- **A)** Dockerfile
+- **B)** kubeconfig
+- **C)** manifest.yaml
+- **D)** settings.json
+
+**Answer:**  
+> **B) kubeconfig**
+
+---
+
+### 37. Which `kubectl` command would you use to create a Kubernetes object from a YAML file?
+- **A)** kubectl apply -f my-object.yaml
+- **B)** kubectl get -f my-object.yaml
+- **C)** kubectl run my-object.yaml
+- **D)** kubectl delete -f my-object.yaml
+
+**Answer:**  
+> **A) kubectl apply -f my-object.yaml**
+
+---
+
+### 38. How can you add a label to a Pod named `my-pod` using `kubectl`?
+- **A)** kubectl label pod my-pod my-label=my-value
+- **B)** kubectl annotate pod my-pod my-label=my-value
+- **C)** kubectl set label pod my-pod my-label=my-value
+- **D)** kubectl add-label pod my-pod my-label=my-value
+
+**Answer:**  
+> **A) kubectl label pod my-pod my-label=my-value**
+
+---
+
+### 39. What does the `kubectl describe` command do?
+- **A)** Deletes a Kubernetes object
+- **B)** Displays detailed information about a Kubernetes object
+- **C)** Lists all objects of a given type
+- **D)** Updates a Kubernetes object
+
+**Answer:**  
+> **B) Displays detailed information about a Kubernetes object**
+
+---
+
+### 40. What is the main task of the Control Plane? (There are three correct answers)
+- **A)** It is responsible for scheduling containers on worker nodes.
+- **B)** It is responsible for storing and managing the cluster data.
+- **C)** It is responsible for running the applications.
+- **D)** It is responsible for providing the cluster's API.
+
+**Answer:**  
+> **A) It is responsible for scheduling containers on worker nodes.**  
+> **B) It is responsible for storing and managing the cluster data.**  
+> **D) It is responsible for providing the cluster's API.**
+
+---
+
+### 41. What is the difference between the create and apply command?
+- **A)** The create command can only be used to create objects. The apply command can be used to create and update objects.
+- **B)** The create command can be used to create and update objects. The apply command can only be used to create objects.
+
+**Answer:**  
+> **A) The create command can only be used to create objects. The apply command can be used to create and update objects.**
+
+---
+
+### 42. Which component is responsible for maintaining network rules on the nodes?
+- **A)** kube-proxy
+- **B)** kubelet
+- **C)** kube-scheduler
+- **D)** kube-controller-manager
+
+**Answer:**  
+> **A) kube-proxy**
+
+---
+
+### 43. Which of the following components belong to the control plane?
+Choose the correct answer.
+- **A)** etcd, kube-scheduler, kube-controller-manager, kube-apiserver
+- **B)** etcd, etcd-scheduler, kube-controller-manager, kube-apiserver
+
+**Answer:**  
+> **A) etcd, kube-scheduler, kube-controller-manager, kube-apiserver**
+
+---
+
 
