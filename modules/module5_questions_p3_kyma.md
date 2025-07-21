@@ -1,649 +1,453 @@
 ## Module 5 questions. Developing Applications in SAP BTP, Kyma Runtime
-## Discovering Kyma
-## Working with k8s workloads
+
+## Using Services to Create Internal and External Communication with Kubernetes
+## Using Service Meshes with Istio
 ---
 
-### 1. Which of the following is TRUE about the relationship between Kyma and Kubernetes?
-- **A)** Kyma is a standalone platform that does not require Kubernetes
-- **B)** Kyma is built on top of Kubernetes and uses its extensibility features
-- **C)** Kyma replaces the Kubernetes scheduler
-- **D)** Kyma is only available as a managed service
+### 1. In Kubernetes, what is the primary function of a Service?
+- **A)** To provide long-term storage for application data
+- **B)** To execute container images on nodes
+- **C)** To organize resources into namespaces
+- **D)** To group Pods and define how they are accessed over the network
 
 **Answer:**  
-> **B) Kyma is built on top of Kubernetes and uses its extensibility features**
+> **D) To group Pods and define how they are accessed over the network**
 
 ---
 
-### 2. What is a key difference between Open-Source Kyma and SAP BTP, Kyma Runtime?
-- **A)** Open-Source Kyma is only available as a managed service
-- **B)** SAP BTP, Kyma Runtime does not support Kyma modules
-- **C)** SAP BTP, Kyma Runtime is a managed service with SLAs and a hosted dashboard, while Open-Source Kyma requires self-management
-- **D)** Open-Source Kyma cannot be installed on Kubernetes
+### 2. Which of the following best describes the main purpose of a Kubernetes Service?
+- **A)** To manage the lifecycle of Pods
+- **B)** To store application logs
+- **C)** To provide stable networking endpoints and load-balance traffic to a dynamic set of Pods
+- **D)** To schedule containers on nodes
 
 **Answer:**  
-> **C) SAP BTP, Kyma Runtime is a managed service with SLAs and a hosted dashboard, while Open-Source Kyma requires self-management**
+> **C) To provide stable networking endpoints and load-balance traffic to a dynamic set of Pods**
 
 ---
 
-### 3. Which of the following is NOT a Kyma module?
-- **A)** Istio
-- **B)** API Gateway
-- **C)** Serverless
-- **D)** Prometheus
+### 3. How does a Service differ from a Deployment in Kubernetes?
+- **A)** A Service manages Pods directly, while a Deployment provides stable networking
+- **B)** A Deployment manages the lifecycle and scaling of Pods, while a Service provides network access to Pods
+- **C)** Both are used for persistent storage
+- **D)** There is no difference
 
 **Answer:**  
-> **D) Prometheus**
+> **B) A Deployment manages the lifecycle and scaling of Pods, while a Service provides network access to Pods**
 
 ---
 
-### 4. What is the purpose of the Kyma Application Connector module?
-- **A)** To provide persistent storage for Kubernetes
-- **B)** To manage user authentication
-- **C)** To simplify and secure the connection between external solutions and Kyma
-- **D)** To provide a dashboard for monitoring
+### 4. Which of the following is TRUE about the relationship between Services and Pods?
+- **A)** Services provide stable networking endpoints and can load-balance traffic to a dynamic set of Pods
+- **B)** Services are deleted when Pods are deleted
+- **C)** Pods manage the lifecycle of Services
+- **D)** Services can only target a single Pod at a time
 
 **Answer:**  
-> **C) To simplify and secure the connection between external solutions and Kyma**
+> **A) Services provide stable networking endpoints and can load-balance traffic to a dynamic set of Pods**
 
 ---
 
-### 5. Which Kyma module is responsible for providing a service mesh and secure microservice communication?
-- **A)** Serverless
-- **B)** Telemetry
-- **C)** Eventing
-- **D)** Istio
+### 5. What mechanism do Services use to select which Pods to target?
+- **A)** Node selectors
+- **B)** Label selectors
+- **C)** Annotations
+- **D)** Resource quotas
 
 **Answer:**  
-> **D) Istio**
+> **B) Label selectors**
 
 ---
 
-### 6. What is the main function of the Kyma Eventing module?
+### 6. Which type of Service would you use to expose an application to external traffic from outside the cluster?
+- **A)** ClusterIP
+- **B)** NodePort
+- **C)** LoadBalancer
+- **D)** Headless
+
+**Answer:**  
+> **C) LoadBalancer**
+
+---
+
+### 7. Which of the following is NOT a valid Kubernetes Service type?
+- **A)** ClusterIP
+- **B)** NodePort
+- **C)** LoadBalancer
+- **D)** ReplicaSet
+
+**Answer:**  
+> **D) ReplicaSet**
+
+---
+
+### 8. What is the default Service type in Kubernetes?
+- **A)** NodePort
+- **B)** LoadBalancer
+- **C)** ClusterIP
+- **D)** Headless
+
+**Answer:**  
+> **C) ClusterIP**
+
+---
+
+### 9. Which object would you use to provide HTTP routing and TLS termination for multiple Services in a Kubernetes cluster?
+- **A)** Pod
+- **B)** Deployment
+- **C)** Ingress
+- **D)** ConfigMap
+
+**Answer:**  
+> **C) Ingress**
+
+---
+
+### 10. Which of the following statements is TRUE about Headless Services in Kubernetes?
+- **A)** They provide a stable IP address for accessing Pods
+- **B)** They do not allocate a cluster IP and are used for direct Pod-to-Pod communication
+- **C)** They are only used for external traffic
+- **D)** They are required for all Deployments
+
+**Answer:**  
+> **B) They do not allocate a cluster IP and are used for direct Pod-to-Pod communication**
+
+---
+
+### 11. Which command lists all Services in the current Kubernetes namespace?
+- **A)** kubectl get pods
+- **B)** kubectl get deployments
+- **C)** kubectl get svc
+- **D)** kubectl describe service
+
+**Answer:**  
+> **C) kubectl get svc**
+
+---
+
+### 13. What is the main purpose of the API Gateway module in Kyma?
 - **A)** To provide persistent storage for applications
-- **B)** To enable asynchronous communication and event-driven workflows
-- **C)** To manage user authentication
-- **D)** To provide a dashboard for monitoring
+- **B)** To expose Services and Functions outside the Kyma cluster
+- **C)** To manage namespaces
+- **D)** To schedule Pods on nodes
 
 **Answer:**  
-> **B) To enable asynchronous communication and event-driven workflows**
+> **B) To expose Services and Functions outside the Kyma cluster**
 
 ---
 
-### 7. Which Kyma module is responsible for collecting and analyzing metrics, logs, and traces?
-- **A)** Telemetry
-- **B)** Serverless
-- **C)** API Gateway
+### 14. Which open-source project is the Kyma API Gateway based on?
+- **A)** Prometheus
+- **B)** Istio
+- **C)** Helm
+- **D)** NATS
+
+**Answer:**  
+> **B) Istio**
+
+---
+
+### 15. What is the role of the kyma-gateway in the Kyma API Gateway module?
+- **A)** It stores application logs for all services
+- **B)** It manages internal DNS resolution for services
+- **C)** It is the main entry point for all external traffic into the Kyma cluster
+- **D)** It provides persistent storage for Pods
+
+**Answer:**  
+> **C) It is the main entry point for all external traffic into the Kyma cluster**
+
+---
+
+### 16. Which component is used for authorizing incoming HTTP requests in the Kyma API Gateway?
+- **A)** Ory Oathkeeper
+- **B)** Prometheus
+- **C)** Grafana
 - **D)** Keda
 
 **Answer:**  
-> **A) Telemetry**
+> **A) Ory Oathkeeper**
 
 ---
 
-### 8. What is the purpose of the Kyma API Gateway module?
-- **A)** To provide a single point of entry for external communication and manage security
-- **B)** To scale workloads based on events
-- **C)** To connect external solutions to Kyma
-- **D)** To provide persistent storage
+### 17. What is the purpose of an APIRule Custom Resource (CR) in Kyma?
+- **A)** To define a new namespace
+- **B)** To expose a Kubernetes Service via the API Gateway
+- **C)** To create a PersistentVolume
+- **D)** To deploy a new Pod
 
 **Answer:**  
-> **A) To provide a single point of entry for external communication and manage security**
+> **B) To expose a Kubernetes Service via the API Gateway**
 
 ---
 
-### 9. Which Kyma module enables event-driven autoscaling of Kubernetes workloads?
-- **A)** Istio
-- **B)** Keda
-- **C)** NATS
-- **D)** Application Connector
+
+### 18. Which access strategies can be defined in an APIRule for securing endpoints? (Choose 3 apply)
+- **A)** noAuth
+- **B)** jwt
+- **C)** extAuth
+- **D)** basicAuth
 
 **Answer:**  
-> **B) Keda**
+> **A) noAuth**  
+> **B) jwt**  
+> **C) extAuth**
 
 ---
 
-### 10. What is the role of the NATS module in Kyma?
-- **A)** To provide a service mesh for microservices
-- **B)** To provide a dashboard for monitoring
-- **C)** To manage distributed persistence and event delivery
-- **D)** To manage user authentication
+### 19. How can you create an APIRule in Kyma? (Choose two)
+- **A)** Using a YAML manifest
+- **B)** Using the Kyma dashboard form-based view
+- **C)** By editing the kubelet configuration
+- **D)** By running a Pod directly
 
 **Answer:**  
-> **C) To manage distributed persistence and event delivery**
+> **A) Using a YAML manifest**  
+> **B) Using the Kyma dashboard form-based view**
 
 ---
 
-### 11. In the context of Kyma, what does "serverless" mean?
-- **A)** The developer focuses on code and business logic, while the platform abstracts away server management
-- **B)** There are no servers involved at all
-- **C)** All applications run on physical servers only
-- **D)** Applications must be stateless
-
-**Answer:**  
-> **A) The developer focuses on code and business logic, while the platform abstracts away server management**
-
----
-
-### 12. Which of the following is NOT a benefit of SAP BTP, Kyma runtime?
-- **A)** Integration with other SAP services and products
-- **B)** Zero infrastructure management and maintenance effort
-- **C)** Out-of-the-box Kyma modules
-- **D)** Requirement to manually install and update Kubernetes
-
-**Answer:**  
-> **D) Requirement to manually install and update Kubernetes**
-
----
-
-### 13. Which open-source project does SAP use to provision and manage the underlying Kubernetes clusters for Kyma runtime?
-- **A)** Helm
-- **B)** Gardener
-- **C)** Prometheus
-- **D)** Linkerd
-
-**Answer:**  
-> **B) Gardener**
-
----
-
-### 14. What is the role of the "seed cluster" in SAP Gardener?
-- **A)** It is the cluster where user applications run
-- **B)** It stores all cluster data
-- **C)** It provisions and manages the shoot clusters, performing updates and ensuring health
-- **D)** It is used for backup and restore only
-
-**Answer:**  
-> **C) It provisions and manages the shoot clusters, performing updates and ensuring health**
-
----
-
-### 15. Which of the following statements is TRUE about namespaces in Kyma runtime?
-- **A)** All resources must be deployed in the default namespace
-- **B)** The kyma-system namespace is used for Kyma modules, while istio-system and kube-system are used for other system-level resources
-- **C)** Namespaces are not supported in Kyma runtime
-- **D)** Only one namespace can exist in a Kyma cluster
-
-**Answer:**  
-> **B) The kyma-system namespace is used for Kyma modules, while istio-system and kube-system are used for other system-level resources**
-
----
-
-### 16. What can you view in the Kyma dashboard for the kyma-system namespace?
-- **A)** Only the list of Pods
-- **B)** The status, health, and resource consumption of objects deployed by Kyma modules
-- **C)** Only user-created resources
-- **D)** Only network policies
-
-**Answer:**  
-> **B) The status, health, and resource consumption of objects deployed by Kyma modules**
-
----
-
-### 17. Which user interfaces can you use to manage your Kyma cluster (There are three correct answers)?
-
-- **A)** Kyma CLI
-- **B)** Kyma dashboard
-- **C)** kubectl
-- **D)** pip
-
-**Answer:**  
-> **A) Kyma CLI**  
-> **B) Kyma dashboard**  
-> **C) kubectl**
-
----
-
-### 18. Gardener is a Kubernetes like container orchestrator.
-- **A)** True
-- **B)** False
-
-**Answer:**  
-> **B) False**
-
----
-
-### 19. How do Kubernetes workloads differ from lower-level objects like Pods?
-- **A)** Workloads are higher-level abstractions that manage Pods for you
-- **B)** Workloads are used only for networking
-- **C)** Pods can manage workloads
-- **D)** Workloads cannot be used to deploy applications
-
-**Answer:**  
-> **A) Workloads are higher-level abstractions that manage Pods for you**
-
----
-
-### 20. What is a key advantage of using workloads instead of managing Pods directly?
-- **A)** Workloads allow for automated scaling, self-healing, and easier updates
-- **B)** Pods provide more automation than workloads
-- **C)** Workloads cannot be used for stateless applications
-- **D)** Pods are more reliable than workloads
-
-**Answer:**  
-> **A) Workloads allow for automated scaling, self-healing, and easier updates**
-
----
-
-### 21. Which of the following statements is TRUE about the relationship between workloads and Pods?
-- **A)** Pods and workloads are the same thing
-- **B)** Pods create and manage workloads
-- **C)** Workloads are only used for persistent storage
-- **D)** Workloads create and manage Pods based on the desired state defined by the user
-
-**Answer:**  
-> **D) Workloads create and manage Pods based on the desired state defined by the user**
-
----
-
-### 22. What is the main difference between a workload and a service in Kubernetes?
-- **A)** Both are used only for persistent storage
-- **B)** A workload provides network access, while a service manages application scaling
-- **C)** A workload manages Pods and their lifecycle, while a service provides stable network access to Pods
-- **D)** A service is used to create Pods, while a workload is used for networking
-
-**Answer:**  
-> **C) A workload manages Pods and their lifecycle, while a service provides stable network access to Pods**
-
----
-
-### 23. What is a Serverless Function in Kyma?
-- **A)** A type of persistent storage
-- **B)** A workload type that allows you to run code without managing the container image or infrastructure
-- **C)** A network policy
-- **D)** A Kubernetes namespace
-
-**Answer:**  
-> **B) A workload type that allows you to run code without managing the container image or infrastructure**
-
----
-
-### 24. Which of the following are valid ways to invoke a Serverless Function in Kyma? (Choose two)
-- **A)** HTTP request
-- **B)** Event
-- **C)** K8s job start
-- **D)** Manual pod restart
-
-**Answer:**  
-> **A) HTTP request**  
-> **B) Event**
-
----
-
-### 25. What is the main benefit of using a Deployment in Kubernetes?
-- **A)** It provides persistent storage for applications
-- **B)** It allows you to declaratively manage application updates, scaling, and rollbacks with zero downtime
-- **C)** It is used only for networking
-- **D)** It is required for creating namespaces
-
-**Answer:**  
-> **B) It allows you to declaratively manage application updates, scaling, and rollbacks with zero downtime**
-
----
-
-### 26. Which Kubernetes object does a Deployment manage directly?
-- **A)** Pods
-- **B)** ReplicaSets
-- **C)** Services
-- **D)** Namespaces
-
-**Answer:**  
-> **B) ReplicaSets**
-
----
-
-### 27. What is the default deployment strategy in Kubernetes?
-- **A)** Blue/Green
-- **B)** Recreate
-- **C)** RollingUpdate
-- **D)** Canary
-
-**Answer:**  
-> **C) RollingUpdate**
-
----
-
-### 28. Which field in a Deployment manifest specifies the number of application instances to run?
-- **A)** selector
-- **B)** template
-- **C)** replicas
-- **D)** strategy
-
-**Answer:**  
-> **C) replicas**
-
----
-
-### 29. Which of the following are common types of Kubernetes workloads? (Choose all that apply)
-- **A)** Deployment
-- **B)** StatefulSet
-- **C)** DaemonSet
-- **D)** Job
-
-**Answer:**  
-> **A) Deployment**  
-> **B) StatefulSet**  
-> **C) DaemonSet**  
-> **D) Job**
-
----
-
-### 30. What is the main difference between the Rolling Update and Recreate deployment strategies in Kubernetes?
-- **A)** Rolling Update updates Pods one at a time with zero downtime, while Recreate deletes all old Pods before creating new ones
-- **B)** Recreate is the default strategy, Rolling Update is not supported
-- **C)** Rolling Update deletes all Pods at once, Recreate updates them one by one
-- **D)** Both strategies always cause downtime
-
-**Answer:**  
-> **A) Rolling Update updates Pods one at a time with zero downtime, while Recreate deletes all old Pods before creating new ones**
-
----
-
-### 31. What is the purpose of Deployment History in Kubernetes?
+### 25. What is the primary function of the Istio Ingress Gateway in Kyma?
 - **A)** To store application logs
-- **B)** To allow you to check previous versions and roll back to a previous state if needed
-- **C)** To manage network policies
-- **D)** To monitor resource usage
+- **B)** To route external traffic into the cluster and forward it to the correct Service
+- **C)** To manage persistent storage for Pods
+- **D)** To schedule Pods on nodes
 
 **Answer:**  
-> **B) To allow you to check previous versions and roll back to a previous state if needed**
+> **B) To route external traffic into the cluster and forward it to the correct Service**
 
 ---
 
-### 32. How can you scale a Deployment in Kubernetes?
-- **A)** By updating the replicas field in the Deployment manifest or using kubectl scale
-- **B)** By creating more namespaces
-- **C)** By increasing the number of Services
-- **D)** By changing the container image
+### 26. Which component acts as the application-based service proxy in the Kyma API Gateway?
+- **A)** Ory Oathkeeper
+- **B)** Envoy Proxy
+- **C)** Prometheus
+- **D)** Grafana
 
 **Answer:**  
-> **A) By updating the replicas field in the Deployment manifest or using kubectl scale**
+> **B) Envoy Proxy**
 
 ---
 
-### 33. What is Helm in the context of Kubernetes?
-- **A)** A monitoring tool
-- **B)** A package manager that simplifies the installation and management of Kubernetes applications
-- **C)** A network policy controller
-- **D)** A container runtime
+### 27. What is the main responsibility of Ory Oathkeeper in the Kyma API Gateway architecture?
+- **A)** To provide monitoring and logging
+- **B)** To authorize incoming HTTP requests based on access rules
+- **C)** To manage DNS resolution
+- **D)** To deploy new Pods
 
 **Answer:**  
-> **B) A package manager that simplifies the installation and management of Kubernetes applications**
+> **B) To authorize incoming HTTP requests based on access rules**
 
 ---
 
-### 34. What is a Helm chart?
-- **A)** A single YAML file for a Pod
-- **B)** A monitoring dashboard
-- **C)** A type of Kubernetes Service
-- **D)** A package of pre-configured Kubernetes resources that can be deployed as a unit
+### 28. How do Istio Ingress Gateway and Ory Oathkeeper work together in the Kyma API Gateway?
+- **A)** Ory Oathkeeper routes traffic, and Istio Ingress Gateway authorizes requests
+- **B)** Istio Ingress Gateway handles incoming traffic, and Ory Oathkeeper enforces access rules on the traffic
+- **C)** Both components are responsible for persistent storage
+- **D)** They are unrelated and operate independently
 
 **Answer:**  
-> **D) A package of pre-configured Kubernetes resources that can be deployed as a unit**
+> **B) Istio Ingress Gateway handles incoming traffic, and Ory Oathkeeper enforces access rules on the traffic**
 
 ---
 
-### 35. Which file in a Helm chart contains the default configuration values for the chart?
-- **A)** Chart.yaml
-- **B)** README.md
-- **C)** deployment.yaml
-- **D)** values.yaml
+### 29. What is a service mesh in the context of Kubernetes?
+- **A)** A type of persistent storage
+- **B)** An infrastructure layer that manages communication between microservices
+- **C)** A tool for building container images
+- **D)** A monitoring dashboard
 
 **Answer:**  
-> **D) values.yaml**
+> **B) An infrastructure layer that manages communication between microservices**
 
 ---
 
-### 36. What is the purpose of templates in Helm charts?
-- **A)** To provide static manifests only
-- **B)** To store container images
-- **C)** To allow parameterization and reuse of manifest files using variables
-- **D)** To define network policies
+### 30. Which of the following is NOT a core benefit of using a service mesh?
+- **A)** Security features like mutual TLS (mTLS)
+- **B)** Observability with tracing and metrics
+- **C)** Traffic management and resilience
+- **D)** Automatic scaling of nodes
 
 **Answer:**  
-> **C) To allow parameterization and reuse of manifest files using variables**
+> **D) Automatic scaling of nodes**
 
 ---
 
-### 37. Which Helm CLI command is used to install a chart?
-- **A)** helm upgrade
-- **B)** helm install
-- **C)** helm delete
-- **D)** helm create
+### 31. What security feature does a service mesh provide for microservice communication?
+- **A)** Manual encryption configuration in each service
+- **B)** Out-of-the-box mutual TLS (mTLS) for service-to-service communication
+- **C)** Only basic authentication
+- **D)** No security features
 
 **Answer:**  
-> **B) helm install**
+> **B) Out-of-the-box mutual TLS (mTLS) for service-to-service communication**
 
 ---
 
-### 38. What is the purpose of the Chart.yaml file in a Helm chart?
-- **A)** It contains the main configuration values for the chart
-- **B)** It provides metadata about the chart, such as name, version, and description
-- **C)** It defines the container images to use
-- **D)** It stores the deployment history
+### 32. In a Kubernetes service mesh, what is the function of the sidecar proxy that is injected alongside each service?
+- **A)** It stores backup copies of service data
+- **B)** It intercepts and manages all inbound and outbound network traffic for the service
+- **C)** It schedules Pods on nodes
+- **D)** It provides a user interface for the service
 
 **Answer:**  
-> **B) It provides metadata about the chart, such as name, version, and description**
+> **B) It intercepts and manages all inbound and outbound network traffic for the service**
 
 ---
 
-### 39. What is typically stored in the charts/ directory of a Helm chart?
-- **A)** The main chart metadata
-- **B)** The rendered manifests
-- **C)** The default values for the chart
-- **D)** Subcharts or dependencies used by the main chart
+### 33. What role does the control plane play in a service mesh architecture?
+- **A)** It runs the main application code for each service
+- **B)** It orchestrates and updates the configuration of all proxies in the mesh
+- **C)** It stores persistent volumes for the cluster
+- **D)** It handles direct communication between Pods
 
 **Answer:**  
-> **D) Subcharts or dependencies used by the main chart**
+> **B) It orchestrates and updates the configuration of all proxies in the mesh**
 
 ---
 
-### 40. What is the purpose of the templates/ directory in a Helm chart?
-- **A)** To store static YAML files only
-- **B)** To store template files that are rendered into Kubernetes manifests using values and variables
-- **C)** To store container images
-- **D)** To store Helm CLI commands
+### 34. In a service mesh, what is the main responsibility of the data plane?
+- **A)** Managing configuration and policy for the mesh
+- **B)** Handling the actual flow of network traffic between services through proxies
+- **C)** Storing logs and metrics for observability
+- **D)** Deploying new microservices automatically
 
 **Answer:**  
-> **B) To store template files that are rendered into Kubernetes manifests using values and variables**
+> **B) Handling the actual flow of network traffic between services through proxies**
 
 ---
 
-### 41. What is the crds/ directory used for in a Helm chart?
-- **A)** To store custom resource definitions (CRDs) that should be installed with the chart
-- **B)** To store container images
-- **C)** To store Helm CLI plugins
-- **D)** To store deployment logs
+### 35. Which service mesh solution is commonly used in Kubernetes and Kyma?
+- **A)** Prometheus
+- **B)** Istio
+- **C)** Helm
+- **D)** NATS
 
 **Answer:**  
-> **A) To store custom resource definitions (CRDs) that should be installed with the chart**
+> **B) Istio**
 
 ---
 
-### 42. What is the purpose of the Helm dry-run feature?
-- **A)** To permanently install a chart in the cluster
-- **B)** To preview the rendered Kubernetes manifests without applying them to the cluster
-- **C)** To delete a Helm release
-- **D)** To update the Helm CLI
+### 36. What is a key advantage of using a service mesh for microservices written in different languages?
+- **A)** It requires all services to use the same programming language
+- **B)** It centralizes networking and security features, decoupling them from application logic
+- **C)** It only supports HTTP traffic
+- **D)** It eliminates the need for service discovery
 
 **Answer:**  
-> **B) To preview the rendered Kubernetes manifests without applying them to the cluster**
+> **B) It centralizes networking and security features, decoupling them from application logic**
 
 ---
 
-### 43. What is the main purpose of a DaemonSet in Kubernetes?
-- **A)** To ensure a Pod runs on every (or a subset of) node(s) in the cluster
-- **B)** To manage application updates with zero downtime
-- **C)** To provide network access to Pods
-- **D)** To create namespaces
+### 38. Which proxy technology does Istio use to manage and route service traffic?
+- **A)** NGINX
+- **B)** Envoy
+- **C)** Apache
+- **D)** Traefik
 
 **Answer:**  
-> **A) To ensure a Pod runs on every (or a subset of) node(s) in the cluster**
+> **B) Envoy**
 
 ---
 
-### 44. Which of the following is a typical use case for a DaemonSet?
-- **A)** Running a logging or monitoring agent on every node
-- **B)** Managing database migrations
-- **C)** Exposing a web service
-- **D)** Creating user accounts
+### 40. Where are Istio's main components installed in a Kyma cluster?
+- **A)** default namespace
+- **B)** istio-system namespace
+- **C)** kyma-system namespace
+- **D)** kube-system namespace
 
 **Answer:**  
-> **A) Running a logging or monitoring agent on every node**
+> **B) istio-system namespace**
 
 ---
 
-### 45. How does a DaemonSet differ from a ReplicaSet?
-- **A)** A DaemonSet ensures one Pod per node, while a ReplicaSet ensures a specified number of Pods anywhere in the cluster
-- **B)** A DaemonSet manages Services, while a ReplicaSet manages Deployments
-- **C)** A ReplicaSet is used for persistent storage, while a DaemonSet is not
-- **D)** There is no difference
+### 41. What happens when you expose a workload in Kyma using an APIRule?
+- **A)** Only a Kubernetes Service is created
+- **B)** Istio resources such as VirtualService and AuthorizationPolicy are automatically created in the background
+- **C)** The workload is exposed without any security module
+- **D)** The workload is deleted
 
 **Answer:**  
-> **A) A DaemonSet ensures one Pod per node, while a ReplicaSet ensures a specified number of Pods anywhere in the cluster**
+> **B) Istio resources such as VirtualService and AuthorizationPolicy are automatically created in the background**
 
 ---
 
-### 46. Which controller is responsible for scheduling Pods for a DaemonSet?
-- **A)** kube-scheduler
-- **B)** DaemonSet controller
-- **C)** Deployment controller
-- **D)** Service controller
+### 42. Which Istio resource is used to define routing rules for HTTP requests based on path, headers, or query parameters?
+- **A)** Gateway
+- **B)** VirtualService
+- **C)** DestinationRule
+- **D)** ServiceAccount
 
 **Answer:**  
-> **B) DaemonSet controller**
+> **B) VirtualService**
 
 ---
 
-### 47. How can you restrict a DaemonSet to run Pods only on specific nodes?
-- **A)** By using a node selector in the DaemonSet manifest
-- **B)** By setting the number of replicas
-- **C)** By creating a Service
-- **D)** By using a PersistentVolumeClaim
+### 43. What is the purpose of an Istio DestinationRule?
+- **A)** To define access policies for users
+- **B)** To group service instances into subsets and apply policies to them
+- **C)** To expose services to the internet
+- **D)** To collect metrics from services
 
 **Answer:**  
-> **A) By using a node selector in the DaemonSet manifest**
+> **B) To group service instances into subsets and apply policies to them**
 
 ---
 
-### 48. What is the main purpose of a Job in Kubernetes?
-- **A)** To run a workload only once to completion
-- **B)** To provide persistent storage
-- **C)** To expose a web service
-- **D)** To manage network policies
+### 44. Which Istio resource acts as a load balancer at the edge of the mesh, handling incoming or outgoing HTTP/TCP connections?
+- **A)** Gateway
+- **B)** VirtualService
+- **C)** ConfigMap
+- **D)** Secret
 
 **Answer:**  
-> **A) To run a workload only once to completion**
+> **A) Gateway**
 
 ---
 
-### 49. Which field in a Job manifest specifies how many times a failed Job should be retried before being marked as failed?
-- **A)** completions
-- **B)** schedule
-- **C)** parallelism
-- **D)** backoffLimit
+### 45. What security protocol does Istio use to encrypt service-to-service communication?
+- **A)** SSH
+- **B)** Basic Auth
+- **C)** Mutual TLS (mTLS)
+- **D)** OAuth2
 
 **Answer:**  
-> **D) backoffLimit**
+> **C) Mutual TLS (mTLS)**
 
 ---
 
-### 50. What is a parallel Job in Kubernetes?
-- **A)** A Job that runs multiple Pods in parallel to complete a set number of tasks
-- **B)** A Job that runs only on a single node
-- **C)** A Job that never terminates
-- **D)** A Job that manages Services
+### 46. Which of the following is NOT an observability feature provided by Istio?
+- **A)** Distributed tracing
+- **B)** Metrics collection
+- **C)** Access logs
+- **D)** Automatic scaling of Pods
 
 **Answer:**  
-> **A) A Job that runs multiple Pods in parallel to complete a set number of tasks**
+> **D) Automatic scaling of Pods**
 
 ---
 
-### 51. What is the purpose of a CronJob in Kubernetes?
-- **A)** To run a workload only once
-- **B)** To schedule Jobs to run periodically at fixed times or intervals
-- **C)** To manage network policies
-- **D)** To expose a web service
+### 47. In Kyma, which module enriches and ships Istio's telemetry data to a backend for analysis?
+- **A)** API Gateway
+- **B)** Telemetry module
+- **C)** Serverless module
+- **D)** Eventing module
 
 **Answer:**  
-> **B) To schedule Jobs to run periodically at fixed times or intervals**
+> **B) Telemetry module**
 
 ---
 
-### 52. How does a Job differ from a Deployment in Kubernetes?
-- **A)** A Job runs Pods to completion and then terminates, while a Deployment manages long-running Pods
-- **B)** A Job manages Services, while a Deployment manages DaemonSets
-- **C)** A Deployment is used for batch jobs, while a Job is used for web services
-- **D)** There is no difference
+### 48. Which of the following statements is true? (There are two correct answers.)
+- **A)** Istio is an open-source service mesh solution that extends Kubernetes.
+- **B)** The Istio control plane intercepts and controls network communication.
+- **C)** Istio has a control plane and a data plane.
+- **D)** The Istio data plane manages the service mesh.
 
 **Answer:**  
-> **A) A Job runs Pods to completion and then terminates, while a Deployment manages long-running Pods**
+> **A) Istio is an open-source service mesh solution that extends Kubernetes.**  
+> **C) Istio has a control plane and a data plane.**
 
 ---
 
-### 53. What is the difference between horizontal and vertical scaling in Kubernetes?
-- **A)** Horizontal scaling changes the number of Pods, vertical scaling changes the resources (CPU/memory) of a Pod
-- **B)** Horizontal scaling changes the resources of a Pod, vertical scaling changes the number of Pods
-- **C)** Both terms mean the same thing
-- **D)** Only vertical scaling is supported in Kubernetes
 
-**Answer:**  
-> **A) Horizontal scaling changes the number of Pods, vertical scaling changes the resources (CPU/memory) of a Pod**
-
----
-
-### 54. What is the main purpose of a Horizontal Pod Autoscaler (HPA) in Kubernetes?
-- **A)** To scale the resources (CPU/memory) of a single Pod vertically
-- **B)** To automatically scale the number of Pods in a Deployment or ReplicaSet based on observed metrics
-- **C)** To create namespaces
-- **D)** To manage network policies
-
-**Answer:**  
-> **B) To automatically scale the number of Pods in a Deployment or ReplicaSet based on observed metrics**
-
----
-
-### 55. Which of the following metrics can be used by an HPA to scale Pods?
-- **A)** CPU usage
-- **B)** Memory usage
-- **C)** Custom metrics
-- **D)** All of the above
-
-**Answer:**  
-> **D) All of the above**
-
----
-
-### 56. What do the minReplicas and maxReplicas fields define in an HPA manifest?
-- **A)** The minimum and maximum CPU usage allowed for a Pod
-- **B)** The minimum and maximum number of Pods that can be created by the HPA
-- **C)** The minimum and maximum memory for a container
-- **D)** The minimum and maximum number of namespaces
-
-**Answer:**  
-> **B) The minimum and maximum number of Pods that can be created by the HPA**
-
----
-
-### 57. Which workload type is suitable for a stateful workload, such as a database?
-- **A)** Pod
-- **B)** ReplicaSet
-- **C)** Deployment
-- **D)** StatefulSet
-- **E)** DaemonSet
-
-**Answer:**  
-> **D) StatefulSet**
-
----
-
-### 58. Which components can you differentiate in a Helm chart?
-Choose the correct answer.
-- **A)** "Chart.yaml", "values.yaml", "charts/", "templates/"
-- **B)** "helm.yaml", "parameters.yaml", "charts/", "manifests/"
-- **C)** "Kubenetes.yaml", "parameters.yaml", "charts/", "manifests/"
-
-**Answer:**  
-> **A) "Chart.yaml", "values.yaml", "charts/", "templates/"**
-
----
 
